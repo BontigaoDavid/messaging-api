@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+  }
+  
+  button {
+    border: 0;
+  }
+  
+  .title-bar {
+    /* -webkit-app-region: drag; */
+    margin: 0;
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    height: 30px;
+    color: white;
+  }
+  
+  .menu-button-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .title-bar-logo {
+    height: 50%;
+    margin-left: 1vw;
+  }
+  
+  .window-controls-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .menu-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    -webkit-app-region: no-drag;
+    width: 50px;
+    height: 100%;
+  }
+  
+  .menu-button:hover {
+    background-color: grey;
+  }
+  
+  .menu-icon {
+    height:80%;
+  }
+  
+  #close-button:hover {
+    background-color: red;
+  }
+  
+  #rooms-list-container {
+    width: 75px;
+    padding-bottom: 5px;
+    background-color: rgb(44, 44, 44);
+    height: calc(100vh - 30px);
+    padding-top: 5px;
+    overflow-y: scroll;
+  }
+  
+  #rooms-list-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .rooms-list-pic-container {
+    background-image: url('images/zed-king-profile-pic.jpg');
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  
+  .rooms-list-pic-container:hover {
+    border-radius: 20px;
+  }
+  
+  #room-menu-container {
+    width: 250px;
+    height: calc(100vh - 30px);
+    background-color: rgb(50, 50, 53);
+    border-top-left-radius: 7px;
+  }
+  
+  #room-title {
+    color: white;
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px solid rgb(44, 44, 44);;
+  }
+  
+  #room-title:hover {
+    background-color: rgb(59, 59, 63);
+  }
+  
