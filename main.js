@@ -3,9 +3,8 @@ const App = Electron.app;
 const BrowserWindow = Electron.BrowserWindow;
 const path = require("path");
 const url = require("url");
+const axios = require("axios");
 let window;
-
-
 
 function createApplicationWindow() {
     window = new BrowserWindow({frame: false, webPreferences: { nodeIntegration: true}});
@@ -16,7 +15,6 @@ function createApplicationWindow() {
     }));
     
     window.webContents.openDevTools();
-    console.log("hello" + window.webContents.getURL())
 
     window.maximize();
     window.setMenu(null);
